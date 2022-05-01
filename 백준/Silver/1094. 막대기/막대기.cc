@@ -7,28 +7,18 @@ int main() {
 	cout.tie(NULL);
 
 	int x;
-	int i = 1;
-	int j = 0;
+	int cnt = 0;
 	int branch = 64;
 
 	cin >> x;
-	while (x >= 0) {
-		while ((branch >> i) >= x) {
-			i++;
+	while (x > 0) {
+		if (branch > x) {
+			branch /= 2;
 		}
-		if ((x - 1) == 0) {
-			j++;
-			cout << j;
-			return 0;
+		else {
+			cnt++;
+			x -= branch;
 		}
-		branch >>= i;
-		x -= branch;
-		j++;
-		if ((x - branch) == 0) {
-			cout << j;
-			return 0;
-		}
-		branch = 64;
 	}
-	cout << j;
+	cout << cnt;
 }
