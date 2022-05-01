@@ -10,11 +10,10 @@ int main() {
 	int i = 1;
 	int j = 0;
 	int branch = 64;
-	int temp = 64;
 
 	cin >> x;
 	while (x >= 0) {
-		while ((temp >> i) >= x) {
+		while ((branch >> i) >= x) {
 			i++;
 		}
 		if ((x - 1) == 0) {
