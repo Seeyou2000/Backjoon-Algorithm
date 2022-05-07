@@ -1,9 +1,8 @@
 #include <iostream>
 using namespace std;
 
-int person, money;
-
 int main() {
+	int person, money;
 	int hotelnum, hotelweeknum;
 	cin >> person >> money >> hotelnum >> hotelweeknum;
 	int cheapPay = 0x7fffffff;
