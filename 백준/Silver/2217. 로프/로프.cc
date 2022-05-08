@@ -20,10 +20,10 @@ int main() {
 	}
 	sort(v.begin(), v.end(), greater<int>());
 	result = v[v.size() - 1] * N;
-	for (int i = 0; i < k - 1; i++) {
+	for (int i = 0; i < N - 1; i++) {
 		v.pop_back();
-		N--;
-		comp = v[v.size() - 1] * N;
+		k--;
+		comp = v[v.size() - 1] * k;
 		if (result < comp) {
 			result = comp;
 		}
