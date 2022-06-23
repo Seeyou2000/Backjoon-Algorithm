@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int arr[1000001];
+int arr[51];
 int N, S;
 
 int main() {
