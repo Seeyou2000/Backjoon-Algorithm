@@ -32,8 +32,11 @@ void TopologySort() {
 			}
 		}
 	}
-	
+}
+
+void bfs() {
 	q.push(finish);
+	visited[finish] = true;
 	while (!q.empty()) {
 		int y = q.front();
 		q.pop();
@@ -68,5 +71,7 @@ int main() {
 	}
 	cin >> start >> finish;
 	TopologySort();
-	cout << result[finish] << " " << Count;
+	bfs();
+	cout << result[finish] << "\n" << Count;
+	return 0;
 }
