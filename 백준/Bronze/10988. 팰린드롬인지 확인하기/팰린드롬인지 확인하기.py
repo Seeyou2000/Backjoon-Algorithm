@@ -1,6 +1,5 @@
 string = input()
-palinstring = reversed(string)
-palinstring = ''.join(palinstring)
+palinstring = string[::-1]
 if string == palinstring:
     print("1")
 else:
