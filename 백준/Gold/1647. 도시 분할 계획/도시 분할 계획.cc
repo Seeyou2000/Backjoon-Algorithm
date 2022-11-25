@@ -49,6 +49,10 @@ public:
 
 int main()
 {
+	ios_base::sync_with_stdio(false);
+	cin.tie(NULL);
+	cout.tie(NULL);
+
 	int V, E;
 	int start_V, end_V, edge_Weight;
 	vector<Edge> v;
