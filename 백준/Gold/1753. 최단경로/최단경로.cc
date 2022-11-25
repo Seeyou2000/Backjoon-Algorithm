@@ -38,6 +38,10 @@ vector<int> Dijkstra(int start, int V, vector<pair<int, int>>* graph)
 
 int main()
 {
+	ios_base::sync_with_stdio(false);
+	cin.tie(NULL);
+	cout.tie(NULL);
+
 	int V, E, K;
 	cin >> V >> E >> K;
 
